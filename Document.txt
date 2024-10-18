@@ -1,0 +1,28 @@
+Eco-Friendly Chatbot Documentation
+Overview
+This chatbot is built to provide eco-friendly alternatives or suggestions in response to user queries about everyday items. When a user asks about an object like a "bottle" or "spoon," the chatbot automatically assumes the user is interested in an eco-friendly version and provides relevant responses.
+
+Core Features
+Eco-Friendly Context for Every Query: The chatbot ensures that every query is processed with an eco-conscious mindset, automatically assuming that the user is asking for environmentally friendly alternatives or suggestions.
+Real-Time Responses: It provides instant feedback on eco-friendly products, solutions, or improvements for various common items.
+Persistent Chat History: The chatbot maintains a session-specific chat history, allowing users to scroll through past interactions during their session.
+Technical Components
+Streamlit Interface: The chatbot runs on a web interface using Streamlit, allowing users to interact in real time through a simple chat box.
+Groq Integration: Groq is used for natural language processing (NLP) to generate meaningful responses based on the input queries. The chatbot uses Groq’s model to interpret user queries with the eco-friendly context in mind.
+Pinecone for Semantic Search: Pinecone is used for generating vector embeddings and conducting semantic searches to find relevant eco-friendly information or context that can enrich responses.
+How It Works
+User Query Input: The user types in a query, such as “bottle” or “spoon.”
+Eco-Friendly Context: The chatbot internally appends “eco-friendly” to every query, ensuring that all responses are related to environmentally friendly alternatives.
+Response Generation: Groq processes the query, Pinecone retrieves relevant contextual information if needed, and the chatbot replies with a message about eco-friendly options or suggestions for the queried item.
+Intended Use
+This chatbot is perfect for users who are interested in eco-friendly products, sustainable living tips, or greener alternatives for everyday items. The system ensures that all responses are geared toward environmental consciousness without the user needing to specify that explicitly.
+
+User Interaction Flow
+Enter Query: The user asks about any item.
+Receive Eco-Friendly Suggestions: The chatbot responds with alternatives that are sustainable, recycled, or eco-conscious.
+Continue Chat: The user can ask follow-up questions, and the chatbot maintains the eco-friendly theme throughout the conversation.
+Customization and Scalability
+Adding More Categories: The system can be expanded to include a larger variety of eco-friendly product categories, or specific preferences (e.g., biodegradable, plastic-free).
+Integration with Databases: The chatbot can integrate with product databases or external APIs to provide more precise suggestions or even link to eco-friendly products available in the market.
+Target Audience
+This chatbot is designed for environmentally conscious consumers, individuals seeking to reduce their carbon footprint, and businesses that wish to promote eco-friendly products.
